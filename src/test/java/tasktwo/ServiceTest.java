@@ -12,7 +12,7 @@ class ServiceTest {
   Service service = new Service(databaseMock);
 
   @Test
-  public void test() {
+  void test() {
     when(databaseMock.getUniqueId()).thenReturn(42);
     assertEquals("Using database with id: 42", service.getDatabaseID());
   }
